@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Forts Of Maharashtra</title>
+  <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="resources/css/header.css" type="text/css">
+	<link rel="stylesheet" href="resources/css/edetails.css" type="text/css">
+	<link rel="stylesheet" href="resources/css/text.css" type="text/css">	
+	<link rel="stylesheet" href="resources/css/footer.css" type="text/css">	
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div class="background">
+				<h1 id="logo"><a href="forts.html"><img class="logo_icon" src="resources/images/logo.png" />Forts Of Maharashtra</a></h1>
+				<div id="navigation">
+					<ul>
+						<li>
+							<a href="forts.html">Home</a>
+						</li>
+						<li>
+							<a href="maps.html">Maps</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="loading" style="font-style:italic;margin: 10px 0px 10px 10px;">
+					Loading...
+			</div>
+			<div id="services" class="hiddenblock">
+				<div class="infobox">
+					<img class="fortimage" id="fort_image" src="http://s3.amazonaws.com/forts/Gawilgarh_Fort_-_C.SHELARE.jpg" />
+					<span class="attr_title">City</span> : <input type="text" id="fort_city" /><br/>
+					<span class="attr_title">District</span> : <input list="dists" type="text" id="fort_district" /><br/>
+					<span class="attr_title">Elevation</span> : <input type="text" id="fort_elevation" /> m<br/>
+					<span class="attr_title">Hike Level</span> : <input type="text"  id="hike_level" /><br/>
+				</div>
+				<h4><input type="text"  id="fort_name"/><br/></h4>
+				<p><textarea id="fort_desc" cols="60" maxlength="1599" rows="10"></textarea></p>
+				<span class="small_itallic">(Max 1600 characters)</span>
+				<h4>How To Reach</h4>
+				<p><textarea id="fort_reach" cols="60" maxlength="500" rows="10"></textarea></p>
+				<span class="small_itallic">(Max 500 characters)</span>
+				<h4>Trekking Tips</h4>
+				<p><textarea id="fort_trekking" cols="60" maxlength="500" rows="10"></textarea></p>
+				<span class="small_itallic">(Max 500 characters)</span>
+				<h4>Overnight stay</h4>
+				<p><textarea id="fort_overnight" cols="60" maxlength="500" rows="10"></textarea></p>
+				<span class="small_itallic">(Max 500 characters)</span>
+				<h4>Places to eat</h4>
+				<p><textarea id="fort_eat" cols="60" maxlength="500" rows="10"></textarea></p>
+				<span class="small_itallic">(Max 500 characters)</span>
+				<h4>Map</h4>
+				<input type="text" id="fort_location_c" readonly="true" size="20" />
+				<div id="maps-canvas" ></div>
+				<div id="buttons" class="div_button"><a class="a_button" id="savefort" href="#">Save</a><a class="a_button" id="resetfort" href="#">Reset</a></div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="background">
+				<div class="body">
+				<div class="section">
+						<h3>Contact Details</h3>
+						<ul>
+							<li>
+								<span>Email</span><strong>:</strong>
+								<p>
+									info@heritagesites.co.in
+								</p>
+							</li>
+							<li>
+								<span>Social</span><a href="" target="_blank" class="twitter"></a><a href="" target="_blank" class="facebook"></a><a href=//plus.google.com/108521546570897782498?prsrc=3"" target="_blank" class="googleplus"></a>
+							</li>
+						</ul>
+					</div>
+					<p id="footnote">
+						� Copyright 2013. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<input type="hidden" id="fort_id" />
+  <input type="hidden" id="fort_nicename" />
+	<datalist id="dists">
+		<option value="District"/>
+		<option value="Thane"/>
+		<option value="Pune"/>
+		<option value="Mumbai Suburban"/>
+		<option value="Nashik"/>
+		<option value="Nagpur"/>
+		<option value="Ahmadnagar"/>
+		<option value="Solapur"/>
+		<option value="Jalgaon"/>
+		<option value="Kolhapur"/>
+		<option value="Aurangabad"/>
+		<option value="Nanded"/>
+		<option value="Mumbai City"/>
+		<option value="Satara"/>
+		<option value="Amravati"/>
+		<option value="Sangli"/>
+		<option value="Yavatmal"/>
+		<option value="Raigarh"/>
+		<option value="Buldana"/>
+		<option value="Bid"/>
+		<option value="Latur"/>
+		<option value="Chandrapur"/>
+		<option value="Dhule"/>
+		<option value="Jalna"/>
+		<option value="Parbhani"/>
+		<option value="Akola"/>
+		<option value="Osmanabad"/>
+		<option value="Nandurbar"/>
+		<option value="Ratnagiri"/>
+		<option value="Gondiya"/>
+		<option value="Wardha"/>
+		<option value="Bhandara"/>
+		<option value="Washim"/>
+		<option value="Hingoli"/>
+		<option value="Gadchiroli"/>
+	<option value="Sindhudurg"/>
+</datalist>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALoyyevokqc9ejvSBU57PVfSZsHf_hpic&sensor=false"></script>
+	<script src="resources/js/jquery-1.9.1.js" ></script>
+	<script src="resources/js/purl.js" ></script>
+	<script src="resources/js/edetails.js" ></script>
+</body>
+</html>

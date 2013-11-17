@@ -1,0 +1,36 @@
+#contents h1, #contents h2, #contents h4, #contents h5, #contents h6 {
+	color: #2e3a54;
+	font-family: "DaysOne-Regular";
+	font-size: 36px;
+	font-weight: normal;
+	margin: 0 0 18px;
+}
+#contents h2 {
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+#contents h4 {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 12px;
+	text-transform: uppercase;
+}
+#contents h5 {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0;
+	text-transform: uppercase;
+}
+#contents h5 a {
+	color: #940315;
+	text-decoration: none;
+}
+#contents h6 {
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+#contents h5 a:hover {
+	text-decoration: underline;
+}
